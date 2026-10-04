@@ -1,1 +1,1 @@
-to niezły plik pl
+HELLO GIT 
