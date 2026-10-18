@@ -1,0 +1,14 @@
+Console.WriteLine("Podaj początkową ilość doświadczenia");
+int experience = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Podaj ilość złota");
+int gold = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Podaj ilość treningów");
+int trainingSessions = int.Parse(Console.ReadLine()!);
+experience *= 2;
+gold -= 8;
+gold += 15;
+trainingSessions += 1;
+Console.WriteLine("Statystyki po walce i treningu:");
+Console.WriteLine($"Doświadczenie: {experience}");
+Console.WriteLine($"Złoto: {gold}");
+Console.WriteLine($"Treningi: {trainingSessions}");
