@@ -1,0 +1,14 @@
+Console.WriteLine("Podaj liczbę racji żywnościowych:");
+int foodRations = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Podaj liczbę osób w drużynie:");
+int teamSize = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Podaj liczbę dni podróży:");
+int travelDays = int.Parse(Console.ReadLine()!);
+int RationsPerPerson = foodRations / teamSize;
+int RationsPerPersonRest = foodRations % teamSize;
+double TeamsRationsPerDay = foodRations / (double)travelDays;
+double PersonRationsPerDay = RationsPerPerson / (double)travelDays;
+Console.WriteLine($"Racje na osobę: {RationsPerPerson}");
+Console.WriteLine($"Pozostałe racje: {RationsPerPersonRest}");
+Console.WriteLine($"Racje na dzień dla całej drużyny: {TeamsRationsPerDay}");
+Console.WriteLine($"Racje na dzień dla jednej osoby: {PersonRationsPerDay}");
